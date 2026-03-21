@@ -4,48 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hermandad del Santo Sepulcro de Elche</title>
-
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Web oficial de la Hermandad del Santo Sepulcro de Elche" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-  <!-- HEADER / MENÚ -->
-  <header class="topbar">
-    <div class="wrap nav">
-      <a class="brand" href="#">
-        <div class="brand-mark">✠</div>
+  <header class="site-header">
+    <div class="header-bar wrap">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <div class="brand-shield">
+          <img src="img/escudo.png" alt="Escudo de la Hermandad" />
+        </div>
         <div class="brand-text">
-          <small>Semana Santa · Elche</small>
+          <span class="brand-top">Semana Santa · Elche</span>
           <strong>Santo Sepulcro</strong>
         </div>
       </a>
 
-      <button class="menu-toggle">Menú</button>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" aria-label="Abrir buscador" aria-expanded="false" aria-controls="searchPanel">
+          <span class="icon-search"></span>
+        </button>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
 
-      <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Hermandad</a>
-        <a href="#">Historia</a>
-        <a href="#">Cultos</a>
-        <a href="#">Patrimonio</a>
-        <a href="#">Contacto</a>
-      </nav>
+    <div class="search-panel" id="searchPanel">
+      <div class="wrap search-inner">
+        <input type="search" placeholder="Buscar en la web" aria-label="Buscar en la web" />
+      </div>
+    </div>
+
+    <nav class="desktop-nav wrap" aria-label="Menú principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#hermandad">Hermandad</a>
+      <a href="#historia">Historia</a>
+      <a href="#cultos">Cultos</a>
+      <a href="#patrimonio">Patrimonio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-label="Menú móvil">
+      <div class="mobile-menu-inner">
+        <nav class="mobile-nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#hermandad">Hermandad</a>
+          <a href="#historia">Historia</a>
+          <a href="#cultos">Cultos</a>
+          <a href="#patrimonio">Patrimonio</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="mobile-social">
+          <a href="#" aria-label="Facebook" class="social-link">f</a>
+          <a href="#" aria-label="Instagram" class="social-link">◎</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero wrap">
-    <div class="hero-card">
-      <div class="hero-copy">
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="wrap hero-content">
+        <p class="hero-kicker">Hermandad del Santo Sepulcro · Elche</p>
         <h1>Santo Sepulcro de Elche</h1>
-        <p class="lead">
-          Web oficial de la Hermandad.
+        <p class="hero-lead">
+          Web oficial de la Hermandad. Un espacio sobrio y elegante para comunicar historia, cultos, patrimonio y vida cofrade.
         </p>
       </div>
+    </section>
 
-      <div class="hero-side"></div>
-    </div>
-  </section>
+    <section class="intro wrap" id="hermandad">
+      <article class="intro-card">
+        <h2>La Hermandad</h2>
+        <p>
+          Aquí irá una presentación institucional breve, con el tono solemne y sencillo que necesita la web.
+        </p>
+      </article>
+    </section>
+  </main>
 
   <script src="js/menu.js"></script>
 </body>
