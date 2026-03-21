@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f5f1e8;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.wrap {
+  width: 90%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-side {
+  background: url('https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f') center/cover;
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
