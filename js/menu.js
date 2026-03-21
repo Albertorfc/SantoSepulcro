@@ -29,8 +29,7 @@ if (searchToggle && searchPanel) {
   });
 }
 
-const mobileLinks = document.querySelectorAll('.mobile-nav a');
-mobileLinks.forEach((link) => {
+document.querySelectorAll('.mobile-nav a').forEach((link) => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('is-open');
     menuToggle.classList.remove('is-active');
