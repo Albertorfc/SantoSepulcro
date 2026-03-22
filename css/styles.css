@@ -1,54 +1,135 @@
 :root {
-  .header-actions {
-    gap: 4px;
-  }
+  --bg: #000;
+  --text: #fff;
+}
 
-  .icon-button,
-  .menu-toggle {
-    width: 38px;
-    height: 38px;
-  }
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+}
 
-  .brand {
-    max-width: calc(100% - 84px);
-  }
+.wrap {
+  width: 90%;
+  margin: auto;
+}
 
-  .brand-shield {
-    width: 52px;
-    height: 52px;
-    flex: 0 0 52px;
-  }
+/* HEADER */
 
-  .site-header.compact .brand-shield,
-  body:not(.home) .brand-shield {
-    width: 40px;
-    height: 40px;
-    flex: 0 0 40px;
-  }
+.site-header {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  transition: 0.3s;
+}
 
-  .brand-text strong {
-    font-size: 18px;
-  }
+.site-header.compact {
+  background: #000;
+}
 
-  .site-header.compact .brand-text strong,
-  body:not(.home) .brand-text strong {
-    font-size: 16px;
-  }
+.header-bar {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
 
-  .brand-top {
-    font-size: 9px;
-    letter-spacing: 0.1em;
-  }
+.site-header.compact .header-bar {
+  min-height: 70px;
+}
 
-  .hero-content {
-    padding: 136px 0 48px;
-  }
+/* LOGO */
 
-  .hero h1 {
-    max-width: 100%;
-  }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  .hero-lead {
-    font-size: 17px;
-  }
+.brand-shield {
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+
+.site-header.compact .brand-shield {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-text strong {
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.site-header.compact .brand-text strong {
+  font-size: 18px;
+}
+
+/* ICONOS HEADER */
+
+.icon-button,
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* MENÚ */
+
+.desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* MÓVIL */
+
+.mobile-menu {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background: black;
+  display: none;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-link img {
+  width: 24px;
+  filter: invert(1);
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  background: url('https://semanasantaelche.com/wp-content/uploads/2018/11/SEPULCRO-1_kfvx44.jpg') center/cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  padding-top: 200px;
 }
