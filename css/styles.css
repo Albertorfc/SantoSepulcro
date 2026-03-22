@@ -52,18 +52,17 @@ a {
   inset: 0 0 auto 0;
   z-index: 100;
   background: transparent;
-  border-bottom: 1px solid transparent;
+  border-bottom: none;
   backdrop-filter: blur(0);
   transition:
     background 0.3s ease,
-    border-color 0.3s ease,
     backdrop-filter 0.3s ease;
 }
 
 .site-header.compact,
 body:not(.home) .site-header {
   background: rgba(0, 0, 0, 0.94);
-  border-bottom-color: var(--line);
+  border-bottom-color: transparent;
   backdrop-filter: blur(14px);
 }
 
@@ -229,13 +228,12 @@ body:not(.home) .brand-text strong {
 .search-panel {
   max-height: 0;
   overflow: hidden;
-  border-top: 1px solid transparent;
-  transition: max-height 0.28s ease, border-color 0.28s ease;
+  border-top: none;
+  transition: max-height 0.28s ease;
 }
 
 .search-panel.is-open {
   max-height: 90px;
-  border-top-color: var(--line);
 }
 
 .search-inner {
@@ -307,11 +305,6 @@ body:not(.home) .brand-text strong {
     top 0.3s ease;
 }
 
-.site-header.compact .mobile-menu,
-body:not(.home) .mobile-menu {
-  top: 76px;
-}
-
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -325,11 +318,6 @@ body:not(.home) .mobile-menu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.site-header.compact .mobile-menu-inner,
-body:not(.home) .mobile-menu-inner {
-  min-height: calc(100vh - 76px);
 }
 
 .mobile-nav {
@@ -463,11 +451,6 @@ body:not(.home) .mobile-menu-inner {
     min-height: 96px;
   }
 
-  .site-header.compact .header-bar,
-  body:not(.home) .header-bar {
-    min-height: 76px;
-  }
-
   .brand {
     gap: 10px;
     max-width: calc(100% - 96px);
@@ -477,13 +460,6 @@ body:not(.home) .mobile-menu-inner {
     width: 58px;
     height: 58px;
     flex: 0 0 58px;
-  }
-
-  .site-header.compact .brand-shield,
-  body:not(.home) .brand-shield {
-    width: 44px;
-    height: 44px;
-    flex: 0 0 44px;
   }
 
   .brand-top {
@@ -496,14 +472,36 @@ body:not(.home) .mobile-menu-inner {
     line-height: 1.05;
   }
 
+  .hero-content {
+    padding: 150px 0 56px;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-header.compact .header-bar,
+  body:not(.home) .header-bar {
+    min-height: 76px;
+  }
+
+  .site-header.compact .brand-shield,
+  body:not(.home) .brand-shield {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+  }
+
   .site-header.compact .brand-text strong,
   body:not(.home) .brand-text strong {
     font-size: 18px;
     line-height: 1.1;
   }
 
-  .hero-content {
-    padding: 150px 0 56px;
+  .mobile-menu {
+    top: 96px;
+  }
+
+  .mobile-menu-inner {
+    min-height: calc(100vh - 96px);
   }
 }
 
