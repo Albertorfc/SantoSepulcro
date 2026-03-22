@@ -291,7 +291,10 @@ body:not(.home) .brand-text strong {
 
 .mobile-menu {
   position: fixed;
-  inset: 76px 0 0 0;
+  top: 96px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.98);
   opacity: 0;
   visibility: hidden;
@@ -300,7 +303,13 @@ body:not(.home) .brand-text strong {
   transition:
     opacity 0.3s ease,
     transform 0.3s ease,
-    visibility 0.3s ease;
+    visibility 0.3s ease,
+    top 0.3s ease;
+}
+
+.site-header.compact .mobile-menu,
+body:not(.home) .mobile-menu {
+  top: 76px;
 }
 
 .mobile-menu.is-open {
@@ -311,11 +320,16 @@ body:not(.home) .brand-text strong {
 }
 
 .mobile-menu-inner {
-  min-height: calc(100vh - 76px);
+  min-height: calc(100vh - 96px);
   padding: 28px 24px 36px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.site-header.compact .mobile-menu-inner,
+body:not(.home) .mobile-menu-inner {
+  min-height: calc(100vh - 76px);
 }
 
 .mobile-nav {
@@ -438,6 +452,7 @@ body:not(.home) .brand-text strong {
 @media (max-width: 900px) {
   .desktop-nav {
     display: none;
+    border-top: none;
   }
 
   .menu-toggle {
@@ -495,6 +510,10 @@ body:not(.home) .brand-text strong {
 @media (min-width: 901px) {
   .mobile-menu {
     display: none;
+  }
+
+  .desktop-nav {
+    border-top: 1px solid var(--line);
   }
 }
 
@@ -559,15 +578,5 @@ body:not(.home) .brand-text strong {
   .social-link img {
     width: 26px;
     height: 26px;
-  }
-}
-
-.desktop-nav {
-  border-top: none;
-}
-
-@media (min-width: 901px) {
-  .desktop-nav {
-    border-top: 1px solid var(--line);
   }
 }
