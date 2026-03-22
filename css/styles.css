@@ -561,3 +561,13 @@ body:not(.home) .brand-text strong {
     height: 26px;
   }
 }
+
+.desktop-nav {
+  border-top: none;
+}
+
+@media (min-width: 901px) {
+  .desktop-nav {
+    border-top: 1px solid var(--line);
+  }
+}
