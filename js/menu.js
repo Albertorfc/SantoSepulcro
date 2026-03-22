@@ -2,6 +2,8 @@ const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 const searchToggle = document.querySelector('.search-toggle');
 const searchPanel = document.querySelector('.search-panel');
+const header = document.querySelector('.site-header');
+const isHome = document.body.classList.contains('home');
 
 if (menuToggle && mobileMenu) {
   menuToggle.addEventListener('click', () => {
@@ -36,3 +38,22 @@ document.querySelectorAll('.mobile-nav a').forEach((link) => {
     menuToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+function updateHeaderOnScroll() {
+  if (!header) return;
+
+  if (!isHome || window.innerWidth > 900) {
+    header.classList.add('compact');
+    return;
+  }
+
+  if (window.scrollY > 72) {
+    header.classList.add('compact');
+  } else {
+    header.classList.remove('compact');
+  }
+}
+
+window.addEventListener('scroll', updateHeaderOnScroll);
+window.addEventListener('resize', updateHeaderOnScroll);
+updateHeaderOnScroll();
