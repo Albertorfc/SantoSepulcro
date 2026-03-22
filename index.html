@@ -4,28 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hermandad del Santo Sepulcro de Elche</title>
-  <meta name="description" content="Web oficial de la Hermandad del Santo Sepulcro de Elche" />
+  <meta
+    name="description"
+    content="Web oficial de la Hermandad de Caballeros del Santo Sepulcro de Elche"
+  />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="home">
 
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="header-bar wrap">
-      <a href="#inicio" class="brand">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
         <div class="brand-shield">
-          <img src="img/escudo.png" alt="Escudo" />
+          <img src="img/escudo.png" alt="Escudo de la Hermandad" />
         </div>
+
         <div class="brand-text">
           <span class="brand-top">Semana Santa · Elche</span>
-          <strong>Hermandad del Santo Sepulcro</strong>
+          <strong>Hermandad de Caballeros del Santo Sepulcro</strong>
         </div>
       </a>
 
       <div class="header-actions">
-        <button class="icon-button search-toggle">
+        <button
+          class="icon-button search-toggle"
+          type="button"
+          aria-label="Abrir buscador"
+          aria-expanded="false"
+          aria-controls="searchPanel"
+        >
           <span class="icon-search"></span>
         </button>
-        <button class="menu-toggle">
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -33,59 +50,155 @@
       </div>
     </div>
 
-    <div class="search-panel">
-      <div class="wrap">
-        <input type="search" placeholder="Buscar..." />
+    <div class="search-panel" id="searchPanel">
+      <div class="wrap search-inner">
+        <input
+          type="search"
+          placeholder="Buscar en la web"
+          aria-label="Buscar en la web"
+        />
       </div>
     </div>
 
-    <nav class="desktop-nav wrap">
-      <a href="#">Inicio</a>
-      <a href="#">Hermandad</a>
-      <a href="#">Historia</a>
-      <a href="#">Cultos</a>
-      <a href="#">Patrimonio</a>
-      <a href="#">Contacto</a>
+    <nav class="desktop-nav wrap" aria-label="Menú principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#hermandad">Hermandad</a>
+      <a href="#historia">Historia</a>
+      <a href="#cultos">Cultos</a>
+      <a href="#patrimonio">Patrimonio</a>
+      <a href="#contacto">Contacto</a>
     </nav>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobileMenu" aria-label="Menú móvil">
       <div class="mobile-menu-inner">
-
         <nav class="mobile-nav">
-          <a href="#">Inicio</a>
-          <a href="#">Hermandad</a>
-          <a href="#">Historia</a>
-          <a href="#">Cultos</a>
-          <a href="#">Patrimonio</a>
-          <a href="#">Contacto</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#hermandad">Hermandad</a>
+          <a href="#historia">Historia</a>
+          <a href="#cultos">Cultos</a>
+          <a href="#patrimonio">Patrimonio</a>
+          <a href="#contacto">Contacto</a>
         </nav>
 
         <div class="mobile-social">
-          <a href="https://www.facebook.com/SantoSepulcroElche/" target="_blank" class="social-link">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg">
+          <a
+            href="https://www.facebook.com/SantoSepulcroElche/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
+              alt="Facebook"
+            />
           </a>
-          <a href="https://www.instagram.com/hermandadsantosepulcroelche/" target="_blank" class="social-link">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg">
+
+          <a
+            href="https://www.instagram.com/hermandadsantosepulcroelche/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"
+              alt="Instagram"
+            />
           </a>
-          <a href="https://x.com/santo_elche" target="_blank" class="social-link">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg">
+
+          <a
+            href="https://x.com/santo_elche"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+            class="social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg"
+              alt="X"
+            />
           </a>
-          <a href="https://www.threads.com/@hermandadsantosepulcroelche" target="_blank" class="social-link">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/threads.svg">
+
+          <a
+            href="https://www.threads.com/@hermandadsantosepulcroelche"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Threads"
+            class="social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/threads.svg"
+              alt="Threads"
+            />
           </a>
         </div>
-
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="inicio">
       <div class="hero-overlay"></div>
+
       <div class="wrap hero-content">
+        <p class="hero-kicker">Hermandad del Santo Sepulcro · Elche</p>
         <h1>Santo Sepulcro de Elche</h1>
-        <p>Web oficial de la Hermandad</p>
+        <p class="hero-lead">
+          Web oficial de la Hermandad. Un espacio sobrio y elegante para
+          comunicar historia, cultos, patrimonio y vida cofrade.
+        </p>
       </div>
+    </section>
+
+    <section class="intro wrap" id="hermandad">
+      <article class="intro-card">
+        <h2>La Hermandad</h2>
+        <p>
+          Aquí irá una presentación institucional breve, con el tono solemne y
+          sencillo que necesita la web.
+        </p>
+      </article>
+    </section>
+
+    <section class="intro wrap" id="historia">
+      <article class="intro-card">
+        <h2>Historia</h2>
+        <p>
+          Este bloque servirá para explicar el origen de la hermandad, sus
+          hitos y su trayectoria dentro de la Semana Santa de Elche.
+        </p>
+      </article>
+    </section>
+
+    <section class="intro wrap" id="cultos">
+      <article class="intro-card">
+        <h2>Cultos</h2>
+        <p>
+          Espacio preparado para incluir cultos, celebraciones, calendario y
+          actos de la hermandad.
+        </p>
+      </article>
+    </section>
+
+    <section class="intro wrap" id="patrimonio">
+      <article class="intro-card">
+        <h2>Patrimonio</h2>
+        <p>
+          Aquí podrás presentar imágenes, insignias, escultura, enseres y otros
+          elementos patrimoniales de la hermandad.
+        </p>
+      </article>
+    </section>
+
+    <section class="intro wrap" id="contacto">
+      <article class="intro-card">
+        <h2>Contacto</h2>
+        <p>
+          Puedes incluir aquí correo, redes sociales, formularios y datos para
+          nuevos hermanos o colaboradores.
+        </p>
+      </article>
     </section>
   </main>
 
