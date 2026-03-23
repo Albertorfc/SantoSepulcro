@@ -583,83 +583,32 @@ body:not(.home) .brand-text strong {
 }
 
 /* ========================= */
-/* INSTAGRAM (FIX LIMPIO) */
+/* INSTAGRAM (VERSIÓN ESTABLE) */
 /* ========================= */
 
-/* Contenedor */
+/* Fondo general del widget */
 .sk-instagram-feed {
-  margin-top: 30px;
+  background-color: #000 !important;
+  padding: 10px;
 }
 
-/* Asegurar que las imágenes se vean */
-.sk-instagram-feed img {
-  display: block !important;
-  width: 100% !important;
-  height: auto !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+/* Fondo interno (sin romper layout) */
+.sk-instagram-feed > * {
+  background-color: #000 !important;
 }
 
-/* Evitar overlays invisibles */
-.sk-instagram-feed a {
-  opacity: 1 !important;
+/* Texto legible */
+.sk-instagram-feed {
+  color: #fff !important;
 }
 
-/* Estética acorde a tu web */
-.sk-instagram-feed .sk_ig_grid_item {
-  border: 1px solid var(--line) !important;
-  background: var(--surface) !important;
-}
-
-/* Botón (si aparece) */
-.sk-instagram-feed .sk_ig_load_more_btn {
-  color: var(--text) !important;
-}
-
-/* --- AJUSTES PARA EL WIDGET DE INSTAGRAM --- */
-
-.instagram-section {
-  background-color: var(--bg);
-}
-
-.sk-instagram-feed,
-.sk_instagram_feed_container {
-  background-color: transparent !important;
-}
-
-.sk-instagram-feed a,
+/* Mantener imágenes visibles */
 .sk-instagram-feed img {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
-.sk-instagram-feed .sk_ig_grid_item_text,
-.sk-instagram-feed .sk_ig_load_more_btn {
-  color: var(--text) !important;
-}
-
+/* Bordes acordes a tu diseño */
 .sk-instagram-feed .sk_ig_grid_item {
   border: 1px solid var(--line) !important;
-  background: var(--surface) !important;
-}
-
-.sk-instagram-feed svg,
-.sk-instagram-feed [class*="loader"],
-.sk-instagram-feed [class*="spinner"] {
-  display: none !important;
-}
-
-/* Forzar grid limpio de 3 columnas */
-.sk-instagram-feed > div {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 16px;
-}
-
-/* Ajuste de imágenes */
-.sk-instagram-feed img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  border-radius: 12px;
 }
