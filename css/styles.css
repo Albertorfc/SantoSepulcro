@@ -591,3 +591,17 @@ body:not(.home) .brand-text strong {
 .instagram-section iframe {
   border-radius: 12px;
 }
+
+/* ========================= */
+/* INSTAGRAM FONDO NEGRO */
+/* ========================= */
+
+.sk-instagram-feed {
+  background: #000 !important;
+  padding: 10px;
+}
+
+.sk-instagram-feed * {
+  background: #000 !important;
+  color: #fff !important;
+}
