@@ -578,3 +578,16 @@ body:not(.home) .brand-text strong {
     height: 26px;
   }
 }
+
+.instagram-section {
+  padding-top: 60px;
+}
+
+.instagram-feed {
+  margin-top: 30px;
+}
+
+/* Opcional: mejorar integración visual */
+.instagram-section iframe {
+  border-radius: 12px;
+}
