@@ -612,3 +612,23 @@ body:not(.home) .brand-text strong {
 .sk-instagram-feed .sk_ig_grid_item {
   border: 1px solid var(--line) !important;
 }
+
+
+/* SOCIAL EN HEADER */
+.header-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-social .social-link img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1); /* blanco */
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.header-social .social-link img:hover {
+  opacity: 1;
+}
