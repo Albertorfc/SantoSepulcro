@@ -583,17 +583,37 @@ body:not(.home) .brand-text strong {
 }
 
 /* ========================= */
-/* INSTAGRAM FONDO NEGRO */
+/* INSTAGRAM (FIX LIMPIO) */
 /* ========================= */
 
+/* Contenedor */
 .sk-instagram-feed {
-  background: #000 !important;
-  padding: 10px;
+  margin-top: 30px;
 }
 
-.sk-instagram-feed * {
-  background: #000 !important;
-  color: #fff !important;
+/* Asegurar que las imágenes se vean */
+.sk-instagram-feed img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Evitar overlays invisibles */
+.sk-instagram-feed a {
+  opacity: 1 !important;
+}
+
+/* Estética acorde a tu web */
+.sk-instagram-feed .sk_ig_grid_item {
+  border: 1px solid var(--line) !important;
+  background: var(--surface) !important;
+}
+
+/* Botón (si aparece) */
+.sk-instagram-feed .sk_ig_load_more_btn {
+  color: var(--text) !important;
 }
 
 /* --- AJUSTES PARA EL WIDGET DE INSTAGRAM --- */
