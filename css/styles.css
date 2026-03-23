@@ -643,6 +643,23 @@ body:not(.home) .brand-text strong {
   background: var(--surface) !important;
 }
 
-.sk-instagram-feed .sk_ig_grid_item:nth-child(n+4) {
+.sk-instagram-feed svg,
+.sk-instagram-feed [class*="loader"],
+.sk-instagram-feed [class*="spinner"] {
   display: none !important;
+}
+
+/* Forzar grid limpio de 3 columnas */
+.sk-instagram-feed > div {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 16px;
+}
+
+/* Ajuste de imágenes */
+.sk-instagram-feed img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 12px;
 }
