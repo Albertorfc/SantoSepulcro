@@ -5,139 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hermandad de Caballeros del Santo Sepulcro de Elche</title>
 
-  <meta
-    name="description"
-    content="Hermandad de Caballeros del Santo Sepulcro de Elche"
-  >
+  <meta name="description" content="Hermandad de Caballeros del Santo Sepulcro de Elche">
 
   <link rel="icon" href="img/sepulcro-n.png" type="image/png">
-
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="home">
 
-  <header class="site-header" id="siteHeader">
-
-    <div class="header-bar wrap">
-      <a href="#inicio" class="brand" aria-label="Ir al inicio">
-        <div class="brand-shield">
-          <img src="img/escudo.png" alt="Escudo de la Hermandad">
-        </div>
-
-        <div class="brand-text">
-          <span class="brand-top">Hermandad · 1852 · Elche</span>
-          <strong>Caballeros del Santo Sepulcro</strong>
-        </div>
-      </a>
-
-      <div class="header-actions">
-        <button
-          class="icon-button search-toggle"
-          type="button"
-          aria-label="Abrir buscador"
-        >
-          <span class="icon-search"></span>
-        </button>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+<header class="site-header" id="siteHeader">
+  <div class="header-bar wrap">
+    <a href="#inicio" class="brand">
+      <div class="brand-shield">
+        <img src="img/escudo.png" alt="Escudo">
       </div>
+      <div class="brand-text">
+        <span class="brand-top">Hermandad · 1852 · Elche</span>
+        <strong>Caballeros del Santo Sepulcro</strong>
+      </div>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <h1>Caballeros del Santo Sepulcro</h1>
+  </div>
+</section>
+
+<section class="section instagram-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-kicker">Instagram</span>
+      <h2>Últimas publicaciones</h2>
     </div>
 
-    <div class="search-panel" id="searchPanel">
-      <div class="wrap search-inner">
-        <input
-          type="search"
-          placeholder="Buscar en la web"
-          aria-label="Buscar en la web"
-        >
-      </div>
+    <!-- IMPORTANTE -->
+    <div class="sk-instagram-feed"
+         data-embed-id="25665614"
+         data-posts-limit="3">
     </div>
+  </div>
+</section>
 
-    <nav class="desktop-nav wrap" aria-label="Menú principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#hermandad">Hermandad</a>
-      <a href="#historia">Historia</a>
-      <a href="#cultos">Cultos</a>
-      <a href="#patrimonio">Patrimonio</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+</main>
 
-    <nav class="mobile-menu" id="mobileMenu" aria-label="Menú móvil">
-      <div class="mobile-menu-inner">
-
-        <div>
-          <nav class="mobile-nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#hermandad">Hermandad</a>
-            <a href="#historia">Historia</a>
-            <a href="#cultos">Cultos</a>
-            <a href="#patrimonio">Patrimonio</a>
-            <a href="#contacto">Contacto</a>
-          </nav>
-
-          <div class="mobile-social">
-            <a href="https://www.facebook.com/SantoSepulcroElche/" target="_blank" class="social-link">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook">
-            </a>
-
-            <a href="https://www.instagram.com/hermandadsantosepulcroelche/" target="_blank" class="social-link">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
-            </a>
-
-            <a href="https://x.com/santo_elche" target="_blank" class="social-link">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="X">
-            </a>
-
-            <a href="https://www.threads.com/@hermandadsantosepulcroelche" target="_blank" class="social-link">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/threads.svg" alt="Threads">
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </nav>
-
-  </header>
-
-  <main>
-
-    <section class="hero" id="inicio">
-      <div class="hero-overlay"></div>
-
-      <div class="wrap hero-content">
-        <p class="hero-kicker">Hermandad · 1852 · Elche</p>
-        <h1>Caballeros del Santo Sepulcro</h1>
-        <p class="hero-lead">
-          Custodios de la imagen de Cristo Yacente en el Santo Sepulcro que se conserva en la iglesia de San José de Elche.
-        </p>
-      </div>
-    </section>
-    
-    <section class="section instagram-section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-kicker">Instagram</span>
-          <h2>Últimas publicaciones</h2>
-        </div>
-
-        <div class="sk-instagram-feed" data-embed-id="25665614" data-posts-limit="3"></div>
-      </div>
-    </section>
-
-  </main>
-
-  <script src="https://widgets.sociablekit.com/instagram-feed/widget.js" defer></script>
-
-  <script src="js/menu.js"></script>
+<script src="https://widgets.sociablekit.com/instagram-feed/widget.js" defer></script>
 
 </body>
 </html>
