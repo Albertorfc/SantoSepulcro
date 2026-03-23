@@ -632,3 +632,9 @@ body:not(.home) .brand-text strong {
 .header-social .social-link img:hover {
   opacity: 1;
 }
+
+@media (max-width: 900px) {
+  .header-social {
+    display: none;
+  }
+}
