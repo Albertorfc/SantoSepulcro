@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia - Hermandad de Caballeros del Santo Sepulcro de Elche</title>
+  <link rel="icon" href="img/sepulcro-n.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page-light">
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-bar wrap">
+      <a href="index.html" class="brand">
+        <div class="brand-shield">
+          <img src="img/escudo.png" alt="Escudo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-top">Hermandad · 1852 · Elche</span>
+          <strong>Santo Sepulcro</strong>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html">Inicio</a>
+        <a href="hermandad.html">Hermandad</a>
+        <a href="historia.html">Historia</a>
+        <a href="cultos.html">Cultos</a>
+        <a href="patrimonio.html">Patrimonio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content-area">
+    
+    <section class="page-header wrap">
+      <h1>Historia de la Hermandad</h1>
+      <p class="subtitle">Memoria y devoción desde el siglo XIX</p>
+    </section>
+
+    <article class="history-content wrap">
+      
+      <section class="history-block">
+        <h2>Fundación y Orígenes (1852)</h2>
+        <p>La Hermandad tiene su origen fundacional en el año <strong>1852</strong>. Desde sus inicios, estuvo estrechamente vinculada a las familias de la nobleza y la burguesía local de Elche, quienes asumieron la responsabilidad de escoltar y dar culto a la imagen de Cristo Yacente.</p>
+        <p>Durante el siglo XIX, la cofradía se consolidó como una de las instituciones más solemnes de la Semana Santa ilicitana, caracterizada por su rigor litúrgico y la austeridad de su procesión de Viernes Santo.</p>
+      </section>
+
+      <section class="history-block">
+        <h2>La Reorganización y la Posguerra</h2>
+        <p>Como muchas instituciones religiosas, la Hermandad sufrió las consecuencias de la Guerra Civil. Sin embargo, gracias al empeño de sus caballeros, se reorganizó con fuerza en la década de los 40, manteniendo la esencia de la escolta caballeresca al cuerpo inerte de Cristo.</p>
+        <p>Es en esta etapa cuando se fortalece la vinculación con la <strong>Parroquia de San José</strong>, lugar donde se venera la imagen y desde donde parte el cortejo procesional.</p>
+      </section>
+
+      <section class="history-block">
+        <h2>Identidad y Tradición Contemporánea</h2>
+        <p>Hoy en día, la Hermandad de Caballeros del Santo Sepulcro destaca por su procesión de <strong>Viernes Santo</strong> por la noche, siendo uno de los momentos más respetuosos y silenciosos de la ciudad. Los caballeros visten su característica túnica y capa, manteniendo una estética que evoca la guardia de honor del cuerpo de Cristo.</p>
+        <p>La Hermandad forma parte de la Junta Mayor de Cofradías y Hermandades de la Semana Santa de Elche, declarada de Interés Turístico Internacional.</p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-content">
+      <img src="img/escudo.png" alt="Escudo" class="footer-shield">
+      <p class="footer-motto">Custodios del Santo Sepulcro · Elche</p>
+      <p>&copy; <span id="current-year"></span> Hermandad de Caballeros del Santo Sepulcro de Elche</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
