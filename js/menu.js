@@ -54,6 +54,7 @@ function updateHeaderOnScroll() {
   }
 }
 
+document.getElementById('current-year').textContent = new Date().getFullYear();
 window.addEventListener("scroll", updateHeaderOnScroll);
 window.addEventListener("resize", updateHeaderOnScroll);
 updateHeaderOnScroll();
