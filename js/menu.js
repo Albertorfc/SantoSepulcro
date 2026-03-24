@@ -54,7 +54,14 @@ function updateHeaderOnScroll() {
   }
 }
 
-document.getElementById('current-year').textContent = new Date().getFullYear();
+// Actualizar año del footer automáticamente
+window.addEventListener('load', function() {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
+
 window.addEventListener("scroll", updateHeaderOnScroll);
 window.addEventListener("resize", updateHeaderOnScroll);
 updateHeaderOnScroll();
